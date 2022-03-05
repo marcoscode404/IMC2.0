@@ -1,5 +1,11 @@
 <h1>Projeto Calculadora de IMC IMC </h1>
 
+![React-App-Opera-2022-03-05-01-01-13](https://user-images.githubusercontent.com/51343240/156869438-c906e934-7019-488c-9c28-e569a874c790.gif)
+
+
+
+
+
 ![image](https://user-images.githubusercontent.com/51343240/156868551-7c00db83-1b85-4261-a3cd-2525c80aea52.png)
 
 
