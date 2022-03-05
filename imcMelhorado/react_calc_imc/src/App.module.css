@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+html{
+    font-size: 62.5%;
+    --text-h1: #3A4B5C;
+    --text-p: #6A7D8B;
+    --border-bootom: rgba(150, 163, 171, .5);
+    --buttom-color: #42C43D;
+    --white-color: #fff;
+    --back-button: #3fa550;
+
+}
+
+.main {
+    padding-bottom: 5rem;
+}
+
+.headerContainer {
+    max-width: 90rem;
+    margin: 4rem auto;
+}
+
+.container {
+    display: flex;
+    max-width: 90rem;
+    margin: auto;
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 2s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+    }
+    
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    
+    @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+    }
+    
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+    }
+    
+    75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+    }
+    
+    90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+    }
+    
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
+
+
+
+
+
+.container .leftSide {
+    flex: 1;
+    margin-right: 4rem;
+}
+
+.container .leftSide h1 {
+    margin: 0;
+    font-size: 4rem;
+    color: var(--text-h1);
+}
+
+.container .leftSide p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    color: var(--text-p);
+}
+
+.container .leftSide input {
+    width: 100%;
+    border: 0;
+    border-bottom: .19rem solid var(--border-bootom);
+    padding: 1rem .2rem;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    outline: 0;
+}
+
+.container .leftSide input:disabled{
+    opacity: .5;
+}
+
+.container .leftSide button {
+    width: 100%;
+    background: var(--buttom-color);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    margin-top: 4rem;
+    transition: all ease .8s;
+}
+.container .leftSide button:disabled{
+    opacity: .5;
+}
+
+.container .leftSide button:hover {
+    opacity: .5;
+}
+
+
+
+
+
+
+.container .rightSide {
+    flex: 1;
+    margin-left: 4rem;
+    display: flex;
+}
+
+.container .rightSide .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.7rem;
+}
+
+.container .rightSide .rightBig {
+    flex: 1;
+    display: flex;
+}
+
+.container .rightSide .rightArrow {
+    position: absolute;
+    background-color: var( --back-button);
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: -3.5rem;
+    margin-top: 14.5rem;
+    transition: all ease .3s;
+
+}
+
+.container .rightSide .rightArrow:hover{
+    opacity: .8;
+}
+
+
+/* responsividade */
+@media (max-width: 770px){
+    header {
+        padding: 0 2rem;
+    }
+
+    .container{
+        padding: 0 2rem;
+        
+        flex-direction: column;
+
+    }
+
+    .container .leftSide{
+        margin-right: 0;
+    }
+
+    .container .rightSide {
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
+    .container .rightSide .rightArrow {
+        margin-left: 0;
+        margin-top: 0;
+        border-radius: 1rem;
+        width: 4rem;
+        height: 4rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .container .rightSide .grid{
+        grid-template-columns: 1fr;
+    }
+}
