@@ -1,3 +1,24 @@
+<h1>Projeto Calculadora de IMC IMC </h1>
+
+![image](https://user-images.githubusercontent.com/51343240/156868551-7c00db83-1b85-4261-a3cd-2525c80aea52.png)
+
+
+![image](https://user-images.githubusercontent.com/51343240/156868578-e178f63b-0876-4557-9ba6-0e4dffe5d737.png)
+
+
+![image](https://user-images.githubusercontent.com/51343240/156868598-314568e6-3aa3-4254-9e7f-7408629dcd89.png)
+
+![image](https://user-images.githubusercontent.com/51343240/156868645-97626ae6-a58c-4b73-a9ad-e2c4414b5c73.png)
+
+
+![image](https://user-images.githubusercontent.com/51343240/156868614-49db71a7-520c-4b8a-9477-7c3495fe728c.png)
+
+
+Para Rodar o Projeto baixe e rode o yarn ou yarn install
+
+depois rode o yarn start ou npm run start
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
